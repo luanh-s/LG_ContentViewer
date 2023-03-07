@@ -1,0 +1,92 @@
+<!--
+Copyright (c) 2020-2023 LG Electronics Inc.
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Web App</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body class="onlyList">
+    <!-- <div>
+        <h1 >Hello, Web Application!!</h1>
+    </div> -->
+    <header id="txt_msg">
+        Content Viewer
+    </header>
+    <div class="videoContainer">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div style="display: flex; gap: 1em;">
+                <div style="font-size: 2em; display: flex; align-items: center;">
+                    Player de Video - 
+                </div>
+                <div class="videoText" style="font-size: 2em; display: flex; align-items: center;">
+                    Episódio 1
+                </div>
+            </div>
+            <div onclick="fechaVideo();" class="fechaVideoBtn">
+                X
+            </div>
+        </div>
+        <video style="width: 100%;" controls src=""></video>
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <button onclick="anteriorVideo();" class="contBtn">Anterior</button>
+            <button onclick="proximoVideo();" class="contBtn">Próximo</button>
+        </div>
+    </div>
+    <div class="itensContainer">
+    </div>
+    
+    <div class="episodesModal">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div style="font-size: 2em; display: flex; align-items: center;">
+                Episódios
+            </div>
+            <div onclick="fechaEpisodes();" class="fechaVideoBtn">
+                X
+            </div>
+        </div>
+        <div class="episodesContainer">
+            <div class="item" data-link="01x11" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E11</div>
+            </div>
+            <div class="item" data-link="01x12" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E12</div>
+            </div>
+            <div class="item" data-link="01x13" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E13</div>
+            </div>
+            <div class="item" data-link="01x14" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E14</div>
+            </div>
+            <div class="item" data-link="01x15" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E15</div>
+            </div>
+            <div class="item" data-link="01x16" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E16</div>
+            </div>
+            <div class="item" data-link="01x17" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E17</div>
+            </div>
+            <div class="item" data-link="01x18" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E18</div>
+            </div>
+            <div class="item" data-link="01x19" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E19</div>
+            </div>
+            <div class="item" data-link="01x20" onclick="exibeVideo(event);">
+                <div class="titulo">Shingeki<br>S01 E20</div>
+            </div>
+            <div class="voiditem"></div>
+            <div class="voiditem"></div>
+            <div class="voiditem"></div>
+            <div class="voiditem"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
